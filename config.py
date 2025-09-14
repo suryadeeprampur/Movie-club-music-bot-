@@ -7,19 +7,19 @@ from pyrogram import filters
 load_dotenv()
 
 # ───── Basic Bot Configuration ───── #
-API_ID = int(os.getenv("24196359"))
-API_HASH = os.getenv("20a1b32381ed174799e8af8def3e176b")
-BOT_TOKEN = os.getenv("")
+API_ID = int(os.getenv("API_ID", "24196359"))
+API_HASH = os.getenv("API_HASH", "20a1b32381ed174799e8af8def3e176b")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "7404203924"))
 OWNER_USERNAME = os.getenv("OWNER_USERNAME", "RDX1444")
 BOT_USERNAME = os.getenv("BOT_USERNAME", "MOVIE_CLUB_MUSIC_BOT")
-BOT_NAME = os.getenv("BOT_NAME", "")
+BOT_NAME = os.getenv("BOT_NAME", "MyMusicBot")
 ASSUSERNAME = os.getenv("ASSUSERNAME", "MC_ASSISTANCE_BOT")
 EVALOP = list(map(int, os.getenv("EVALOP", "6797202080").split()))
 
 # ───── Mongo & Logging ───── #
-MONGO_DB_URI = os.getenv("MONGO_DB_URI")
+MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
 LOGGER_ID = int(os.getenv("LOGGER_ID", "-1003096094043"))
 
 # ───── Limits and Durations ───── #
@@ -31,41 +31,41 @@ TG_AUDIO_FILESIZE_LIMIT = int(os.getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000")
 TG_VIDEO_FILESIZE_LIMIT = int(os.getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
 # ───── Custom API Configs ───── #
-API_URL = os.getenv("API_URL")
-API_KEY = os.getenv("API_KEY")
-COOKIE_URL = os.getenv("COOKIE_URL")
-DEEP_API = os.getenv("DEEP_API")
+API_URL = os.getenv("API_URL", "")
+API_KEY = os.getenv("API_KEY", "")
+COOKIE_URL = os.getenv("COOKIE_URL", "")
+DEEP_API = os.getenv("DEEP_API", "")
 
 # ───── Heroku Configuration ───── #
-HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
-HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
+HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME", "")
+HEROKU_API_KEY = os.getenv("HEROKU_API_KEY", "")
 
 # ───── Git & Updates ───── #
 UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/CertifiedCoders/AnnieXMusic")
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "Master")
-GIT_TOKEN = os.getenv("GIT_TOKEN")
+GIT_TOKEN = os.getenv("GIT_TOKEN", "")
 
 # ───── Support & Community ───── #
 SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/RDX_PVT_GROUP")
 SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/RDX_PVT_LTD")
 
 # ───── Assistant Auto Leave ───── #
-AUTO_LEAVING_ASSISTANT = False
+AUTO_LEAVING_ASSISTANT = os.getenv("AUTO_LEAVING_ASSISTANT", "False").lower() in ["true", "1", "yes"]
 AUTO_LEAVE_ASSISTANT_TIME = int(os.getenv("ASSISTANT_LEAVE_TIME", "11500"))
 
 # ───── Error Handling ───── #
-DEBUG_IGNORE_LOG = True
+DEBUG_IGNORE_LOG = os.getenv("DEBUG_IGNORE_LOG", "True").lower() in ["true", "1", "yes"]
 
 # ───── Spotify Credentials ───── #
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "22b6125bfe224587b722d6815002db2b")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "c9c63c6fbf2f467c8bc68624851e9773")
 
 # ───── Session Strings ───── #
-STRING1 = os.getenv("STRING_SESSION")
-STRING2 = os.getenv("STRING_SESSION2")
-STRING3 = os.getenv("STRING_SESSION3")
-STRING4 = os.getenv("STRING_SESSION4")
-STRING5 = os.getenv("STRING_SESSION5")
+STRING1 = os.getenv("STRING_SESSION", "")
+STRING2 = os.getenv("STRING_SESSION2", "")
+STRING3 = os.getenv("STRING_SESSION3", "")
+STRING4 = os.getenv("STRING_SESSION4", "")
+STRING5 = os.getenv("STRING_SESSION5", "")
 
 # ───── Server Settings ───── #
 SERVER_PLAYLIST_LIMIT = int(os.getenv("SERVER_PLAYLIST_LIMIT", "3000"))
@@ -101,7 +101,6 @@ DURATION_LIMIT = time_to_seconds(f"{DURATION_LIMIT_MIN}:00")
 
 # ───── Bot Introduction Messages ───── #
 AYU = ["💞", "🦋", "🔍", "🧪", "⚡️", "🔥", "🎩", "🌈", "🍷", "🥂", "🥃", "🕊️", "🪄", "💌", "🧨"]
-# (AYUV list same as your original)
 
 # ───── Runtime Structures ───── #
 BANNED_USERS = filters.user()
