@@ -19,7 +19,7 @@ ASSUSERNAME = os.getenv("ASSUSERNAME", "MC_ASSISTANCE_BOT")
 EVALOP = list(map(int, os.getenv("EVALOP", "6797202080").split()))
 
 # ───── Mongo & Logging ───── #
-MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = os.getenv("MONGO_DB_URI", "mongodb+srv://MovieClub:MovieClub@cluster0.dau2bnj.mongodb.net/MovieClub?retryWrites=true&w=majority&appName=Cluster0")
 LOGGER_ID = int(os.getenv("LOGGER_ID", "-1003096094043"))
 
 # ───── Limits and Durations ───── #
