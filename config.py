@@ -7,14 +7,14 @@ from pyrogram import filters
 load_dotenv()
 
 # ───── Basic Bot Configuration ───── #
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+API_ID = int(os.getenv("24196359"))
+API_HASH = os.getenv("20a1b32381ed174799e8af8def3e176b")
+BOT_TOKEN = os.getenv("")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "7404203924"))
 OWNER_USERNAME = os.getenv("OWNER_USERNAME", "RDX1444")
 BOT_USERNAME = os.getenv("BOT_USERNAME", "MOVIE_CLUB_MUSIC_BOT")
-BOT_NAME = os.getenv("BOT_NAME", "AnnieMusicBot")
+BOT_NAME = os.getenv("BOT_NAME", "")
 ASSUSERNAME = os.getenv("ASSUSERNAME", "MC_ASSISTANCE_BOT")
 EVALOP = list(map(int, os.getenv("EVALOP", "6797202080").split()))
 
