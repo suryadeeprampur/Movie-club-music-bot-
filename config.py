@@ -11,7 +11,9 @@ API_ID = int(getenv("24196359"))
 API_HASH = getenv("20a1b32381ed174799e8af8def3e176b")
 BOT_TOKEN = getenv("")
 
-OWNER_ID = int(getenv("7404203924)")
+
+
+OWNER_ID = int(os.getenv("7404203924"))
 OWNER_USERNAME = getenv("OWNER_USERNAME", "RDX1444")
 BOT_USERNAME = getenv("BOT_USERNAME", "MOVIE_CLUB_MUSIC_BOT")
 BOT_NAME = getenv("BOT_NAME", "")
