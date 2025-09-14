@@ -9,7 +9,7 @@ load_dotenv()
 # ───── Basic Bot Configuration ───── #
 API_ID = int(getenv("24196359"))
 API_HASH = getenv("20a1b32381ed174799e8af8def3e176b")
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("")
 
 OWNER_ID = int(getenv("7404203924)")
 OWNER_USERNAME = getenv("OWNER_USERNAME", "RDX1444")
@@ -46,8 +46,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN")
 
 # ───── Support & Community ───── #
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/CertifiedNetwork")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/CertifiedDiscussion")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/RDX_PVT_GROUP")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/RDX_PVT_LTD")
 
 # ───── Assistant Auto Leave ───── #
 AUTO_LEAVING_ASSISTANT = False
