@@ -25,12 +25,14 @@ from ANNIEMUSIC.utils.decorators.language import LanguageStart
 from ANNIEMUSIC.utils.formatters import get_readable_time
 from ANNIEMUSIC.utils.inline.start import private_panel, start_panel
 from ANNIEMUSIC.utils.inline.help import first_page
-from config import BANNED_USERS, AYUV, HELP_IMG_URL, START_VIDS, STICKERS
+from config import BANNED_USERS, AYU, HELP_IMG_URL, START_VIDS, STICKERS
 from strings import get_string
+
 
 async def delete_sticker_after_delay(message, delay):
     await asyncio.sleep(delay)
     await message.delete()
+
 
 @app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
 @LanguageStart
@@ -66,6 +68,7 @@ async def start_pm(client, message: Message, _):
                 channel = result["channel"]["name"]
                 link = result["link"]
                 published = result["publishedTime"]
+
             searched_text = _["start_6"].format(
                 title, duration, views, published, channellink, channel, app.mention
             )
@@ -98,7 +101,7 @@ async def start_pm(client, message: Message, _):
         UP, CPU, RAM, DISK = await bot_sys_stats()
         await message.reply_video(
             random.choice(START_VIDS),
-            caption=random.choice(AYUV).format(
+            caption=random.choice(AYU).format(
                 message.from_user.mention, app.mention, UP, DISK, CPU, RAM, served_users, served_chats
             ),
             reply_markup=InlineKeyboardMarkup(out),
@@ -108,6 +111,7 @@ async def start_pm(client, message: Message, _):
                 chat_id=config.LOGGER_ID,
                 text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
             )
+
 
 @app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
 @LanguageStart
@@ -120,6 +124,7 @@ async def start_gp(client, message: Message, _):
         reply_markup=InlineKeyboardMarkup(out),
     )
     return await add_served_chat(message.chat.id)
+
 
 @app.on_message(filters.new_chat_members, group=-1)
 async def welcome(client, message: Message):
