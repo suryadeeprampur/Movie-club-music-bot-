@@ -12,7 +12,7 @@ API_HASH = os.getenv("API_HASH", "20a1b32381ed174799e8af8def3e176b")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "7404203924"))
-OWNER_USERNAME = os.getenv("OWNER_USERNAME", "RDX1444")
+OWNER_USERNAME = os.getenv("OWNER_USERNAME", "RDX144")
 BOT_USERNAME = os.getenv("BOT_USERNAME", "MOVIE_CLUB_MUSIC_BOT")
 BOT_NAME = os.getenv("BOT_NAME", "MyMusicBot")
 ASSUSERNAME = os.getenv("ASSUSERNAME", "MC_ASSISTANCE_BOT")
@@ -60,12 +60,8 @@ DEBUG_IGNORE_LOG = os.getenv("DEBUG_IGNORE_LOG", "True").lower() in ["true", "1"
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "22b6125bfe224587b722d6815002db2b")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "c9c63c6fbf2f467c8bc68624851e9773")
 
-# ───── Session Strings ───── #
-STRING1 = os.getenv("STRING_SESSION", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")
-STRING2 = os.getenv("STRING_SESSION2", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")
-STRING3 = os.getenv("STRING_SESSION3", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")
-STRING4 = os.getenv("STRING_SESSION4", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")
-STRING5 = os.getenv("STRING_SESSION5", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")
+# ───── Session String ───── #
+STRING1 = os.getenv("STRING_SESSION", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")  # Only one session string used
 
 # ───── Server Settings ───── #
 SERVER_PLAYLIST_LIMIT = int(os.getenv("SERVER_PLAYLIST_LIMIT", "3000"))
@@ -102,9 +98,9 @@ DURATION_LIMIT = time_to_seconds(f"{DURATION_LIMIT_MIN}:00")
 # ───── Bot Introduction Messages ───── #
 AYU = ["💞", "🦋", "🔍", "🧪", "⚡️", "🔥", "🎩", "🌈", "🍷", "🥂", "🥃", "🕊️", "🪄", "💌", "🧨"]
 AYUV = [
-    "ʜᴇʟʟᴏ {0}, 🥀\n\n ɪᴛ'ꜱ ᴍᴇ {1} !\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [ᴄᴇʀᴛɪғɪᴇᴅ ᴄᴏᴅᴇʀ ✔︎](https://t.me/CertifiedCoder)",
-    "ʜɪɪ, {0} ~\n\n◆ ɪ'ᴍ ᴀ {1} ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ ꜱᴏᴍᴇ ᴜꜱᴇꜰᴜʟ\n◆ ᴜʟᴛʀᴀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\n✨ ꜰᴇᴀᴛᴜʀᴇꜱ ⚡️\n◆ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.\n◆ Sᴜᴘᴇʀғᴀsᴛ ʟᴀɢ Fʀᴇᴇ ᴘʟᴀʏᴇʀ.\n◆ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ.\n◆ ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.\n◆ ɴᴏ ᴘʀᴏᴍᴏ.\n◆ ʙᴇꜱᴛ ꜱᴏᴜɴᴅ Qᴜᴀʟɪᴛʏ.\n◆ 24×7 ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ.\n◆ ᴀᴅᴅ ᴛʜɪꜱ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ɪᴛ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜꜱɪᴄ 🎵.\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [ᴄᴇʀᴛɪғɪᴇᴅ ᴄᴏᴅᴇʀ ✔︎](https://t.me/CertifiedCoder)",
+    "ʜᴇʟʟᴏ {0}, 🥀\n\n ɪᴛ'ꜱ ᴍᴇ {1} !\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴍᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [RDX ✔︎](https://t.me/RDX144)"
 ]
+
 # ───── Runtime Structures ───── #
 BANNED_USERS = filters.user()
 adminlist, lyrical, votemode, autoclean, confirmer = {}, {}, {}, [], {}
