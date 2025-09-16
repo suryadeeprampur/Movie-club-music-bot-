@@ -60,8 +60,12 @@ DEBUG_IGNORE_LOG = os.getenv("DEBUG_IGNORE_LOG", "True").lower() in ["true", "1"
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "22b6125bfe224587b722d6815002db2b")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "c9c63c6fbf2f467c8bc68624851e9773")
 
-# ───── Session String ───── #
-STRING1 = os.getenv("STRING_SESSION", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")  # Only one session string used
+# ───── Session Strings (supports up to 5 sessions) ───── #
+STRING1 = os.getenv("STRING_SESSION", "1BVtsOLABu390WqsaYyUa8paI5GmXawqYdP_ZoLGH9emSRTIR1F4n0BD0oLMYj2qC4dJfXOsYudU9qnB3qsGaYUU6pahrLY3t9WPx7BXfX2VqIH3ne2HW9RBD2-JPSiMdBN-P8sPHm7XEcn7-iRBKY5QC_hTBXdfGJPnRPZV5jt0aXRTIUxZHYJYyVCD3ZZdwstj3SEe8q7yXIRiMsxb7812OgDUu9Hy80jSGsAJiP4Uo02NG0GI_HfF2iqcV59CxXpWgqp9g0et4qC2R9a4YU7kBy5QZuuxKgzrzemsRHNkdlz9pJ9QOFh1_P3i8qTBGuTcVeHfxPBpLRnlitQ-Iq1ZiW4kiPNY=")
+STRING2 = os.getenv("STRING2", "")
+STRING3 = os.getenv("STRING3", "")
+STRING4 = os.getenv("STRING4", "")
+STRING5 = os.getenv("STRING5", "")
 
 # ───── Server Settings ───── #
 SERVER_PLAYLIST_LIMIT = int(os.getenv("SERVER_PLAYLIST_LIMIT", "3000"))
@@ -78,6 +82,7 @@ STICKERS = [
     "CAACAgUAAx0Cd6nKUAACASBl_rnalOle6g7qS-ry-aZ1ZpVEnwACgg8AAizLEFfI5wfykoCR4h4E",
     "CAACAgUAAx0Cd6nKUAACATJl_rsEJOsaaPSYGhU7bo7iEwL8AAPMDgACu2PYV8Vb8aT4_HUPHgQ"
 ]
+
 HELP_IMG_URL = "https://files.catbox.moe/yg2vky.jpg"
 PING_VID_URL = "https://files.catbox.moe/3ivvgo.mp4"
 PLAYLIST_IMG_URL = "https://telegra.ph/file/94e9eca3b0ec6e2dc6cd5.png"
@@ -93,9 +98,9 @@ SPOTIFY_ARTIST_IMG_URL = SPOTIFY_ALBUM_IMG_URL = SPOTIFY_PLAYLIST_IMG_URL = YOUT
 def time_to_seconds(time: str) -> int:
     return sum(int(x) * 60**i for i, x in enumerate(reversed(time.split(":"))))
 
-DURATION_LIMIT = time_to_seconds(f"{DURATION_LIMIT_MIN}:00")
+DURATION_LIMIT = time_to_seconds(f"{int(os.getenv('DURATION_LIMIT', '17000'))}:00")
 
-# ───── Bot Introduction Messages ───── #
+# ───── Bot Intro Messages ───── #
 AYU = ["💞", "🦋", "🔍", "🧪", "⚡️", "🔥", "🎩", "🌈", "🍷", "🥂", "🥃", "🕊️", "🪄", "💌", "🧨"]
 AYUV = [
     "ʜᴇʟʟᴏ {0}, 🥀\n\n ɪᴛ'ꜱ ᴍᴇ {1} !\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴍᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [RDX ✔︎](https://t.me/RDX144)"
